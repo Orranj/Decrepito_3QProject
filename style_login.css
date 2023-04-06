@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+	font-family: 'Quicksand';
+	background: #CBE4DE;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: right;
+    background-position-y: center;
+	scroll-behavior: smooth;
+}
+/*animation for the header*/
+@keyframes slide{
+    0%   { width: 0; }
+    33%  { width: 26%;}
+    66%  { width: 52%;}
+    100% { width: 90%; }
+}
+
+#header{
+	animation: slide 2s ease-in-out;
+    animation-iteration-count: 1;
+}
+header{
+	height: 100px;
+	width: 90%;
+	background: #89A3A0;
+    color: #CBE4DE;
+    float: left;
+    margin-top: 55px;
+    padding-right: 20px;
+	position: fixed;
+    text-align: right;
+    line-height: 100px;
+}
+header h1{
+    font-size: 50px;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#intro{
+	background: #1F544C;
+	border-radius: 15px;
+	padding: 20px;
+    margin-top: 12.5%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    width: 40%;
+	color: white;
+	font-size: 20px;
+    display: block;
+    justify-content: left;
+    float: left;
+}
+@keyframes intro{
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    75%  { opacity: 15%; }
+    100% { opacity: 100%; }
+}
+
+#intro{
+	animation: intro 1s ease-in-out;
+    animation-iteration-count: 1;
+}
+#please{
+	font-size: 15px;
+	color:#ffffffd0;
+
+}
+#logform{
+	background-color: #1F544C8A;
+    border: 2px solid #1F544C;
+    border-radius: 15px;
+	padding: 20px;
+	margin-top: 12.5%;
+    margin-bottom: 2%;
+    margin-right: 18.5%;
+    width: 25%;
+	color: white;
+	font-size: 20px;
+	list-style: none;
+	text-decoration: none;
+	display: block;
+    float: right;
+	animation: intro 1s ease-out;
+    animation-iteration-count: 1;
+}
+#logform li a{
+	text-decoration: none;
+	font-size: 15px;
+}
+
+#button{
+	background-color: #1F544C;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 15px;
+}
+#button:active{
+	background-color: #1F544C8A;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	text-align: center;
+	font-size: 15px;
+}
+section p{
+    text-align: justify;
+}
+#username:focus{
+	background-color: #89A3A0;
+}
+#password:focus{
+	background-color: #89A3A0;
+}
+
+#fb{
+	width: 50px;
+	height: 50px;
+    margin: 5px;
+	background: url(image2.png) -94px -38px;
+}
+
+#fb:hover{
+	filter: brightness(10%);
+}
+
+#twt{
+	width: 50px;
+	height: 50px;
+    margin: 5px;
+	background: url(image2.png) -255px -38px;
+}
+
+#twt:hover{
+	filter: brightness(10%);
+}
+#insta{
+	width: 50px;
+	height: 50px;
+    margin: 5px;
+	background: url(image2.png) -175px -38px;
+}
+
+#insta:hover{
+	filter: brightness(10%);
+}
+
+footer{
+	height: 150px;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background: #89A3A0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+	padding-top: 1%;
+    margin-top: auto;
+}
+footer h3{
+	font-size: 18px;
+}
+footer p{
+	font-size: 15px;
+}
+footer ul{
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	justify-content: space-between;
+	margin-top: 4px;
+}
+footer ul li{
+	text-decoration: none;
+	list-style: none;
+	justify-content: space-between;
+}
